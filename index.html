@@ -20,9 +20,10 @@
       <section>
         <div class="header-region-container">
           <button class="header-btn" id="menu-btn" onclick="menuBtnHandler()">
-            <div class="bubble-upper" id="menu-bubble-top"></div>
+            <div class="bubble-top" id="menu-bubble-top"></div>
             <lottie-player
-              class="menu-btn-icon"
+              class="btn-icon"
+              id="menu-btn-icon"
               mode="normal"
               loop
               src="./assets/images/menu.json"
@@ -32,9 +33,10 @@
           <img src="./assets/images/logo-oba.png" alt="logo" />
         </div>
         <div class="header-region-container">
-          <button class="headder-btn" id="search-btn">
+          <button class="header-btn" id="search-btn">
             <lottie-player
-              class="search-btn-icon"
+              class="btn-icon"
+              id="search-btn-icon"
               mode="bounce"
               loop
               src="./assets/images/search.json"
@@ -48,15 +50,17 @@
       </section>
       <section>
         <div class="nav-container">
-          <div class="bubble-lower menu-first-load" id="menu-bubble-lower">
+          <div class="bubble-container">
+            <div class="bubble-lower" id="menu-bubble-lower">
             <p>Menu</p> 
           </div>
+        </div>
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Collectie</a></li>
-              <li><a href="#">Mijn OBA</a></li>
-              <li><a href="#">Over OBA</a></li>
+              <li class="nav-item" id="nav-1"><a href="#">Home</a></li>
+              <li class="nav-item" id="nav-2"><a href="#">Collectie</a></li>
+              <li class="nav-item" id="nav-3"><a href="#">Mijn OBA</a></li>
+              <li class="nav-item" id="nav-4"><a href="#">Over OBA</a></li>
             </ul>
           </nav>
         </div>
