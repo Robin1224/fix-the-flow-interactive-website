@@ -85,6 +85,7 @@ header>section:nth-of-type(2) {
   z-index: 2;
 }
 
+/* The header bubbles for the nav animation */
 .bubble-top {
   border: 1px solid var(--grijs);
   display: block;
@@ -113,15 +114,21 @@ header>section:nth-of-type(2) {
   overflow: show;
   transition: 0.5s ease;
 }
+
+/* 
+TODO: rename
+Container for the bottom bubble, required to get the correct layout
+*/
 .bubble-container {
   /* border: 1px solid var(--grijs); */
   display: flex;
   align-items: flex-end;
   justify-content: center;
   height: 2.5rem;
-  width: 4rem
-;}
+  width: 4rem;
+}
 
+/* Menu label */
 .bubble-lower>p {
   margin-top: -0.2rem;
   margin-left: 3.2rem;
@@ -129,18 +136,19 @@ header>section:nth-of-type(2) {
   color: var(--rood);
 }
 
+/* Making the first letter stand out from the bubble */
 .bubble-lower>p::first-letter {
   font-size: 1.9rem;
   color: var(--wit);
   margin-right: 0.5rem;
 }
 
+/* Logo */
 header>section>div>img {
   height: 4rem;
 }
 
 /* Active states of the navbar elements, assigned by javascript */
-
 .menu-active-top {
   transform: translate(-50%, calc(100% + 0.18rem)) !important;
 }
