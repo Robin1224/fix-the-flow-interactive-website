@@ -1,0 +1,162 @@
+/* Variables in body, making dark mode an option */
+body {
+  --rood: #ff0000;
+  --wit: #ffffff;
+  --zwart: #000000;
+  --grijs: #969696;
+
+  font-family: 'avenirroman';
+}
+
+/* Top side of header */
+header>section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--grijs);
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+/* Bottom side of header */
+header>section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--grijs);
+  overflow: hidden;
+  height: 3rem;
+}
+
+/* Containers for left and right side of header */
+.header-region-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  margin-top: -2.7rem;
+  margin-bottom: 0.4rem;
+  margin-left: 0.7rem;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.header-btn {
+  background: none;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  border: none;
+  padding: 0;
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+}
+
+.menu-btn-icon {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.search-btn-icon {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.bubble-upper {
+  border: 1px solid var(--grijs);
+  display: block;
+  border-radius: 15%;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 0.16rem));
+  z-index: 0;
+  transition: 0.5s ease; 
+}
+
+.bubble-lower {
+  background-color: var(--rood);
+  display: grid;
+  justify-content: center;
+  border-radius: 15%;
+  transform: translate(0.25rem, -3rem);
+  margin-top: -2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: show;
+  transition: 0.5s ease;
+}
+
+.bubble-lower>p {
+  margin-top: -0.2rem;
+  margin-left: 3.2rem;
+  font-size: 1.6rem;
+  color: var(--rood);
+}
+
+.bubble-lower>p::first-letter {
+  font-size: 1.9rem;
+  color: var(--wit);
+  margin-right: 0.5rem;
+}
+
+header>section>div>img {
+  height: 4rem;
+}
+
+/* Active states of the navbar elements, assigned by javascript */
+
+.menu-active-top {
+  transform: translate(-50%, calc(100% + 0.18rem)) !important;
+}
+
+.menu-active-lower {
+  margin-top: 6rem;
+}
+
+.page-title-active {
+  margin-top: 2.2rem;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--wit);
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.nav-container>nav>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes menu-inactive-lower{
+  0% {
+    margin-top: 6rem;
+  }
+  100% {
+    margin-top: -2.5rem;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/fonts/avenir/stylesheet.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js" type="text/javascript" defer></script>
+
+    <!-- Dependency for menu btn Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+
+    <title>Oba search demo</title>
+  </head>
+
+  <body onload="onPageLoad()">
+    <header>
+      <section>
+        <div class="header-region-container">
+          <button class="header-btn" id="menu-btn" onclick="menuBtnHandler()">
+            <div class="bubble-upper" id="menu-bubble-top"></div>
+            <lottie-player
+              class="menu-btn-icon"
+              mode="normal"
+              loop
+              src="./assets/images/menu.json"
+            >
+            </lottie-player>
+          </button>
+          <img src="./assets/images/logo-oba.png" alt="logo" />
+        </div>
+        <div class="header-region-container">
+          <button class="headder-btn" id="search-btn">
+            <lottie-player
+              class="search-btn-icon"
+              mode="bounce"
+              loop
+              src="./assets/images/search.json"
+              speed="2.3"
+            >
+          </button>
+          <button class="header-btn" id="account-btn">
+            <img src="./assets/images/account.svg" alt="account" />
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="nav-container">
+          <div class="bubble-lower menu-first-load" id="menu-bubble-lower">
+            <p>Menu</p> 
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Collectie</a></li>
+              <li><a href="#">Mijn OBA</a></li>
+              <li><a href="#">Over OBA</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="page-title" id="page-title">Collectie</h1>
+      </section>
+    </header>
+
+    <!-- <main>
+      <div class="container">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum
+          quisquam, quidem officia quod veniam impedit voluptatibus iure quas,
+          quibusdam, recusandae dignissimos. Voluptate, quos quaerat.
+        </p>
+      </div>
+
+      <img src="./images/image.png" alt="image" />
+    </main>
+
+    <footer>
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum
+        quisquam, quidem officia quod veniam impedit voluptatibus iure quas,
+        quibusdam, recusandae dignissimos. Voluptate, quos quaerat.
+      </p>
+      <img src="./images/image.png" alt="image" />
+    </footer> -->
+  </body>
+</html>
