@@ -10,6 +10,10 @@ body {
   font-family: 'avenirroman';
 }
 
+/* 
+TODO: Find a more reliable way to place bottom bubble, now using many seemingly random, very specific numbers
+*/
+
 /* Top side of header */
 header>section:nth-of-type(1) {
   display: flex;
@@ -85,7 +89,9 @@ header>section:nth-of-type(2) {
   z-index: 2;
 }
 
-/* The header bubbles for the nav animation */
+/* 
+  Wrapper class for the header bubbles for the nav animation 
+*/
 .bubble-top {
   border: 1px solid var(--grijs);
   display: block;
@@ -108,18 +114,14 @@ header>section:nth-of-type(2) {
   border-radius: 15%;
   left: 0.26rem;
   transform: translateY(-3.98rem);
-  /* transform: translate(-50%, calc(-50% - 0.16rem)); */
   height: 2.5rem;
   width: 2.5rem;
   overflow: show;
   transition: 0.5s ease;
 }
 
-/* 
-TODO: rename
-Container for the bottom bubble, required to get the correct layout
-*/
-.bubble-container {
+/* Container for the bottom bubble, required to get the correct layout */
+.bubble-container-menu {
   /* border: 1px solid var(--grijs); */
   display: flex;
   align-items: flex-end;
@@ -131,7 +133,7 @@ Container for the bottom bubble, required to get the correct layout
 /* Menu label */
 .bubble-lower>p {
   margin-top: -0.2rem;
-  margin-left: 3.2rem;
+  margin-left: 3.1rem;
   font-size: 1.6rem;
   color: var(--rood);
 }
@@ -140,7 +142,7 @@ Container for the bottom bubble, required to get the correct layout
 .bubble-lower>p::first-letter {
   font-size: 1.9rem;
   color: var(--wit);
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 /* Logo */
@@ -200,6 +202,7 @@ header>section>div>img {
   width: 15vw;
   margin-top: -5rem;
   transition: 0.5s ease;
+  /* font-family: 'avenirblack'; */
 }
 
 /* Styling for text inside nav items */
